@@ -79,6 +79,86 @@ const questionBank = {
                 "While true, it is not the only contraindication listed here.",
                 "Correct. ACE inhibitors are strictly avoided in patients with a history of angioedema and in those with high potassium levels."
             ]
+        },
+        {
+            "question": "A patient with resistant hypertension is taking Lisinopril, Amlodipine, and Chlorthalidone at maximally tolerated doses. BP remains 156/94 mmHg. What is the most appropriate next add-on agent?",
+            "options": [
+                "Spironolactone",
+                "Clonidine",
+                "Hydralazine",
+                "Doxazosin"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. In resistant HTN (on ACE/ARB + CCB + thiazide), a mineralocorticoid receptor antagonist is the preferred 4th agent.",
+                "Clonidine can lower BP, but it is not preferred before trying spironolactone in resistant HTN.",
+                "Hydralazine is typically reserved for later-line therapy or specific indications like pregnancy or HFrEF with nitrates.",
+                "Alpha-1 blockers are not preferred for resistant HTN unless there is a compelling reason like BPH."
+            ]
+        },
+        {
+            "question": "A patient with acute aortic dissection presents with BP 190/110 mmHg and severe chest pain. What is the best initial IV medication?",
+            "options": [
+                "Esmolol",
+                "Nitroprusside",
+                "Hydralazine",
+                "Nicardipine"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Rapid beta-blockade (e.g., esmolol) is first to reduce shear stress before adding vasodilators.",
+                "Nitroprusside is used after beta-blockade; alone it can increase shear stress via reflex tachycardia.",
+                "Hydralazine is more appropriate in pregnancy-related HTN and has unpredictable BP drops here.",
+                "Nicardipine is a good IV vasodilator but should follow beta-blockade in dissection."
+            ]
+        },
+        {
+            "question": "A patient develops a persistent dry cough after starting Lisinopril. BP is still above goal. Which change is most appropriate?",
+            "options": [
+                "Switch to Losartan",
+                "Add Hydrochlorothiazide",
+                "Stop Lisinopril and start Aliskiren",
+                "Continue Lisinopril and add Amlodipine"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. ACE inhibitor cough is class-related; switching to an ARB like losartan preserves renal/cardiac benefits without cough.",
+                "A thiazide can help BP, but it does not address the ACE inhibitor–induced cough.",
+                "Direct renin inhibitors are not preferred replacements and have limited outcome data; ARBs are standard.",
+                "Adding a CCB may control BP but leaves the ACE inhibitor–induced cough untreated."
+            ]
+        },
+        {
+            "question": "A patient with CKD (eGFR 22 mL/min/1.73 m2) needs additional BP control despite an ACE inhibitor. Which diuretic is most appropriate?",
+            "options": [
+                "Hydrochlorothiazide",
+                "Chlorthalidone",
+                "Furosemide",
+                "Amiloride"
+            ],
+            "correctAnswer": 2,
+            "explanations": [
+                "Thiazides are less effective when eGFR is < 30 mL/min/1.73 m2.",
+                "Chlorthalidone is a strong thiazide-like agent but still loses efficacy at low eGFR.",
+                "Correct. Loop diuretics retain efficacy in advanced CKD and are preferred for BP/volume control.",
+                "Amiloride is a potassium-sparing diuretic and can worsen hyperkalemia in CKD."
+            ]
+        },
+        {
+            "question": "A 24-week pregnant patient has persistent BP readings around 150/95 mmHg. Which medication is first-line?",
+            "options": [
+                "Labetalol",
+                "Enalapril",
+                "Hydrochlorothiazide",
+                "Atenolol"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Labetalol is a preferred first-line agent for chronic HTN in pregnancy.",
+                "ACE inhibitors like enalapril are contraindicated in pregnancy due to fetal toxicity.",
+                "Thiazides are not first-line for pregnancy HTN unless the patient was already controlled on them.",
+                "Atenolol is generally avoided due to risk of fetal growth restriction."
+            ]
         }
     ],
     "Diabetes Mellitus": [
@@ -160,6 +240,86 @@ const questionBank = {
                 "Correct. The primary goal is to restore volume and perfusion first.",
                 "Potassium is checked and replaced early, but fluid is the most immediate priority.",
                 "Bicarbonate is rarely used and only if pH is extremely low (< 6.9)."
+            ]
+        },
+        {
+            "question": "A patient with DKA has a serum potassium of 3.0 mEq/L. What is the best next step before starting insulin?",
+            "options": [
+                "Begin insulin infusion immediately",
+                "Give IV potassium replacement first",
+                "Administer sodium bicarbonate",
+                "Start dextrose-containing fluids"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "Insulin will drive potassium into cells and can cause dangerous hypokalemia if K+ is low.",
+                "Correct. If K+ is < 3.3 mEq/L, replace potassium first and hold insulin until K+ is safe.",
+                "Bicarbonate is reserved for severe acidosis (pH < 6.9), not isolated hypokalemia.",
+                "Dextrose is added once glucose falls; it does not correct the immediate K+ risk."
+            ]
+        },
+        {
+            "question": "Which patient should NOT continue Metformin therapy?",
+            "options": [
+                "eGFR 55 mL/min/1.73 m2",
+                "eGFR 25 mL/min/1.73 m2",
+                "A1C 8.2% on Metformin 1000 mg BID",
+                "BMI 34 kg/m2"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "Metformin is safe at this level of renal function with routine monitoring.",
+                "Correct. Metformin is contraindicated when eGFR is < 30 due to lactic acidosis risk.",
+                "An elevated A1C alone is not a reason to stop metformin; add-on therapy is appropriate.",
+                "Higher BMI is a reason to continue metformin due to weight-neutral/weight-loss effects."
+            ]
+        },
+        {
+            "question": "Which class is most appropriate to add for a patient with Type 2 Diabetes, HFrEF, and CKD to reduce heart failure hospitalizations?",
+            "options": [
+                "DPP-4 inhibitor",
+                "SGLT2 inhibitor",
+                "Sulfonylurea",
+                "Meglitinide"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "DPP-4 inhibitors are CV neutral; they do not reduce HF hospitalizations.",
+                "Correct. SGLT2 inhibitors (e.g., dapagliflozin, empagliflozin) reduce HF events and provide renal benefits.",
+                "Sulfonylureas increase hypoglycemia risk and have no HF benefit.",
+                "Meglitinides are short-acting secretagogues without HF benefit."
+            ]
+        },
+        {
+            "question": "Which medication class is contraindicated in patients with a personal or family history of medullary thyroid carcinoma or MEN2?",
+            "options": [
+                "GLP-1 receptor agonists",
+                "SGLT2 inhibitors",
+                "DPP-4 inhibitors",
+                "Thiazolidinediones"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. GLP-1 RAs carry a boxed warning for MTC/MEN2 based on rodent C-cell tumors.",
+                "SGLT2 inhibitors are not associated with MTC/MEN2 risk.",
+                "DPP-4 inhibitors do not have this contraindication.",
+                "TZDs have risks like edema and fractures, not MTC/MEN2."
+            ]
+        },
+        {
+            "question": "Which diabetes medication has the highest risk of causing hypoglycemia?",
+            "options": [
+                "Glyburide",
+                "Metformin",
+                "Empagliflozin",
+                "Sitagliptin"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Sulfonylureas like glyburide stimulate insulin release regardless of glucose level.",
+                "Metformin is weight-neutral and does not cause hypoglycemia as monotherapy.",
+                "SGLT2 inhibitors lower glucose via urinary excretion and have low hypoglycemia risk.",
+                "DPP-4 inhibitors are glucose-dependent and rarely cause hypoglycemia alone."
             ]
         }
     ],
@@ -243,6 +403,86 @@ const questionBank = {
                 "Dairy does not interact significantly with Warfarin.",
                 "High protein does not significantly affect INR."
             ]
+        },
+        {
+            "question": "A patient on Warfarin presents with intracranial hemorrhage and an INR of 6.5. What is the best immediate reversal strategy?",
+            "options": [
+                "Hold Warfarin only",
+                "Oral vitamin K 5 mg",
+                "IV vitamin K plus 4-factor PCC",
+                "Fresh frozen plasma alone"
+            ],
+            "correctAnswer": 2,
+            "explanations": [
+                "Holding Warfarin is insufficient for life-threatening bleeding.",
+                "Oral vitamin K is too slow for an active ICH.",
+                "Correct. IV vitamin K provides sustained reversal and 4-factor PCC gives rapid factor replacement.",
+                "FFP can be used if PCC is unavailable, but PCC is faster and preferred."
+            ]
+        },
+        {
+            "question": "Which anticoagulant is appropriate for a patient with a mechanical mitral valve?",
+            "options": [
+                "Apixaban",
+                "Rivaroxaban",
+                "Warfarin",
+                "Dabigatran"
+            ],
+            "correctAnswer": 2,
+            "explanations": [
+                "DOACs are contraindicated in mechanical valves due to higher thrombosis risk.",
+                "Rivaroxaban is not approved for mechanical valves.",
+                "Correct. Warfarin is the standard and only recommended oral agent for mechanical valves.",
+                "Dabigatran failed in mechanical valve trials and is contraindicated."
+            ]
+        },
+        {
+            "question": "A patient on unfractionated heparin develops a >50% platelet drop on day 6. What is the best next step?",
+            "options": [
+                "Continue heparin and monitor",
+                "Stop heparin and start Argatroban",
+                "Switch to Enoxaparin",
+                "Give platelet transfusion and continue heparin"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "This is concerning for HIT and requires immediate action.",
+                "Correct. Stop all heparin products and start a non-heparin anticoagulant like argatroban.",
+                "LMWH can cross-react in HIT and is not appropriate.",
+                "Platelet transfusions are avoided unless there is life-threatening bleeding."
+            ]
+        },
+        {
+            "question": "Which Apixaban dose is appropriate for a patient with nonvalvular AF who is 82 years old, weighs 55 kg, and has SCr 1.6 mg/dL?",
+            "options": [
+                "5 mg twice daily",
+                "2.5 mg twice daily",
+                "10 mg twice daily",
+                "5 mg once daily"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "This would be the standard dose if fewer than 2 dose-reduction criteria were met.",
+                "Correct. Reduce to 2.5 mg BID when at least 2 of: age >= 80, weight <= 60 kg, SCr >= 1.5.",
+                "10 mg BID is for initial VTE treatment, not AF maintenance.",
+                "Apixaban is dosed twice daily, not once daily, for AF."
+            ]
+        },
+        {
+            "question": "What is the preferred anticoagulant for treatment of VTE during pregnancy?",
+            "options": [
+                "Warfarin",
+                "Apixaban",
+                "Low-molecular-weight heparin",
+                "Rivaroxaban"
+            ],
+            "correctAnswer": 2,
+            "explanations": [
+                "Warfarin is teratogenic and contraindicated in pregnancy.",
+                "DOACs are not recommended due to limited safety data in pregnancy.",
+                "Correct. LMWH is the preferred agent due to safety and efficacy.",
+                "Rivaroxaban is not recommended in pregnancy."
+            ]
         }
     ],
     "Infectious Diseases - General": [
@@ -324,6 +564,86 @@ const questionBank = {
                 "Correct. Vancomycin causes histamine release if infused too fast.",
                 "Gentamicin is not associated with this syndrome.",
                 "Metronidazole is not associated with this syndrome."
+            ]
+        },
+        {
+            "question": "Which dosing strategy best optimizes the efficacy of beta-lactam antibiotics against organisms with higher MICs?",
+            "options": [
+                "High peak dosing once daily",
+                "Extended or continuous infusion",
+                "Pulse dosing every 48 hours",
+                "Front-load with a large single dose"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "High peaks are most relevant for concentration-dependent drugs like aminoglycosides.",
+                "Correct. Beta-lactams are time-dependent; increasing time above MIC improves killing.",
+                "Infrequent dosing reduces time above MIC and is not appropriate for beta-lactams.",
+                "A single large dose does not sustain time above MIC for time-dependent agents."
+            ]
+        },
+        {
+            "question": "Which antibiotic class has a significant post-antibiotic effect, allowing once-daily dosing to be effective?",
+            "options": [
+                "Macrolides",
+                "Aminoglycosides",
+                "Penicillins",
+                "Cephalosporins"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "Macrolides are time-dependent and do not have the classic strong PAE.",
+                "Correct. Aminoglycosides have concentration-dependent killing and a strong post-antibiotic effect.",
+                "Penicillins are time-dependent and rely on time above MIC.",
+                "Cephalosporins are time-dependent and do not exhibit strong PAE."
+            ]
+        },
+        {
+            "question": "A patient started on Vancomycin + Piperacillin/Tazobactam for sepsis now has blood cultures growing MSSA. What is the best next step?",
+            "options": [
+                "Continue Vancomycin + Piperacillin/Tazobactam",
+                "Switch to Cefazolin",
+                "Add Gentamicin for synergy",
+                "Stop all antibiotics"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "Broad-spectrum therapy is unnecessary once the organism is identified and increases toxicity risk.",
+                "Correct. De-escalate to a targeted anti-MSSA agent like cefazolin or nafcillin.",
+                "Gentamicin adds toxicity without clear benefit for uncomplicated MSSA bacteremia.",
+                "Stopping therapy is inappropriate; bacteremia requires targeted treatment."
+            ]
+        },
+        {
+            "question": "Which antibiotic is most reliably active against anaerobes below the diaphragm?",
+            "options": [
+                "Metronidazole",
+                "Azithromycin",
+                "Ceftriaxone",
+                "Gentamicin"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Metronidazole has excellent activity against anaerobes (e.g., Bacteroides).",
+                "Azithromycin has limited anaerobic coverage.",
+                "Ceftriaxone is weak against many anaerobes.",
+                "Gentamicin covers aerobic gram-negatives, not anaerobes."
+            ]
+        },
+        {
+            "question": "Which antibiotic is most strongly associated with C. difficile infection?",
+            "options": [
+                "Clindamycin",
+                "Doxycycline",
+                "Azithromycin",
+                "Nitrofurantoin"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Clindamycin is a classic high-risk agent for C. difficile.",
+                "Doxycycline has relatively low C. diff risk.",
+                "Azithromycin has lower risk compared to clindamycin or broad-spectrum beta-lactams.",
+                "Nitrofurantoin has low C. diff risk due to minimal gut flora disruption."
             ]
         }
     ],
@@ -407,6 +727,86 @@ const questionBank = {
                 "Apretude is the new long-acting injectable PrEP.",
                 "Correct. All three are modern options for HIV prevention."
             ]
+        },
+        {
+            "question": "A patient is HLA-B*5701 positive. Which NRTI should be avoided?",
+            "options": [
+                "Abacavir",
+                "Tenofovir DF",
+                "Emtricitabine",
+                "Lamivudine"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. HLA-B*5701 positivity predicts potentially fatal abacavir hypersensitivity.",
+                "Tenofovir DF does not have this genetic risk; monitor renal/bone effects instead.",
+                "Emtricitabine is generally well tolerated and not linked to HLA-B*5701 reactions.",
+                "Lamivudine is not associated with HLA-B*5701 hypersensitivity."
+            ]
+        },
+        {
+            "question": "At what CD4 count should prophylaxis for Mycobacterium avium complex (MAC) be started if the patient is not on effective ART?",
+            "options": [
+                "< 200 cells/mm3",
+                "< 100 cells/mm3",
+                "< 50 cells/mm3",
+                "< 500 cells/mm3"
+            ],
+            "correctAnswer": 2,
+            "explanations": [
+                "CD4 < 200 is the threshold for PCP prophylaxis, not MAC.",
+                "CD4 < 100 is used for Toxoplasma prophylaxis in IgG-positive patients.",
+                "Correct. MAC prophylaxis (e.g., azithromycin) is indicated when CD4 < 50.",
+                "Patients are not at high MAC risk at this count."
+            ]
+        },
+        {
+            "question": "A patient on a ritonavir-boosted protease inhibitor needs a statin. Which is the safest choice?",
+            "options": [
+                "Simvastatin",
+                "Lovastatin",
+                "Pravastatin",
+                "High-dose Atorvastatin"
+            ],
+            "correctAnswer": 2,
+            "explanations": [
+                "Simvastatin is contraindicated with boosted PIs due to severe myopathy risk.",
+                "Lovastatin is also contraindicated with boosted PIs.",
+                "Correct. Pravastatin has minimal CYP3A4 metabolism and is preferred.",
+                "Atorvastatin can be used at low doses, but high-dose increases toxicity risk."
+            ]
+        },
+        {
+            "question": "Which of the following is an INSTI-based single-tablet regimen for initial HIV treatment?",
+            "options": [
+                "Bictegravir/TAF/FTC",
+                "Efavirenz/TDF/FTC",
+                "Darunavir/Cobicistat/TAF/FTC",
+                "Atazanavir/Ritonavir + TDF/FTC"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. BIC/TAF/FTC is a preferred INSTI-based single-tablet regimen.",
+                "Efavirenz/TDF/FTC is an older NNRTI-based regimen with more CNS effects.",
+                "Darunavir-based regimens are PI-based, not INSTI-based, and have more drug interactions.",
+                "This is a multi-pill PI-based regimen, not a single-tablet INSTI regimen."
+            ]
+        },
+        {
+            "question": "Which adverse effect is most associated with Tenofovir DF (TDF)?",
+            "options": [
+                "Proximal renal tubulopathy and bone mineral density loss",
+                "Severe hyperbilirubinemia",
+                "QT prolongation",
+                "Stevens-Johnson syndrome"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. TDF can cause renal tubular toxicity and reduce bone mineral density.",
+                "Hyperbilirubinemia is classically associated with atazanavir.",
+                "QT prolongation is more associated with some NNRTIs and other agents, not TDF.",
+                "SJS is more associated with certain NNRTIs like nevirapine."
+            ]
         }
     ],
     "Asthma & COPD": [
@@ -488,6 +888,86 @@ const questionBank = {
                 "Montelukast is a leukotriene modifier for asthma.",
                 "Omalizumab is an anti-IgE biologic for asthma.",
                 "Dupilumab is an IL-4/13 inhibitor for eosinophilic asthma."
+            ]
+        },
+        {
+            "question": "A patient has asthma symptoms daily and wakes up with symptoms 3 nights per week. What is the best initial controller therapy?",
+            "options": [
+                "SABA as needed only",
+                "Low-dose ICS daily",
+                "Medium-dose ICS/LABA",
+                "Add LAMA only"
+            ],
+            "correctAnswer": 2,
+            "explanations": [
+                "SABA-only therapy is no longer preferred for persistent asthma and does not control inflammation.",
+                "Low-dose ICS is more appropriate for mild persistent asthma, not daily symptoms with frequent nocturnal awakenings.",
+                "Correct. This is moderate persistent asthma; medium-dose ICS/LABA is appropriate initial controller therapy.",
+                "LAMA is add-on therapy for uncontrolled asthma, not first-line controller."
+            ]
+        },
+        {
+            "question": "Which COPD patient should receive inhaled corticosteroids (ICS) in addition to bronchodilators?",
+            "options": [
+                "No exacerbations and low symptoms",
+                "Frequent exacerbations and eosinophils 350 cells/uL",
+                "Chronic bronchitis without exacerbations",
+                "FEV1 75% with mild symptoms"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "ICS is not indicated for low-risk, minimally symptomatic patients.",
+                "Correct. ICS is favored when exacerbations are frequent and eosinophils are elevated.",
+                "Chronic bronchitis alone is not an indication for ICS without exacerbations.",
+                "Mild disease does not warrant ICS due to pneumonia risk."
+            ]
+        },
+        {
+            "question": "A patient using Albuterol multiple times daily for asthma has poor control. What is the best next step?",
+            "options": [
+                "Continue SABA and add theophylline",
+                "Switch to LABA monotherapy",
+                "Start daily inhaled corticosteroid",
+                "Add oral prednisone long-term"
+            ],
+            "correctAnswer": 2,
+            "explanations": [
+                "Theophylline is not first-line and does not address the underlying inflammation effectively.",
+                "LABA monotherapy is contraindicated in asthma due to increased mortality.",
+                "Correct. Frequent SABA use indicates uncontrolled asthma; initiate daily ICS (or ICS-formoterol).",
+                "Chronic oral steroids are avoided due to major adverse effects."
+            ]
+        },
+        {
+            "question": "Which medication is appropriate for acute COPD exacerbation management in the hospital?",
+            "options": [
+                "Inhaled tiotropium alone",
+                "Systemic corticosteroids",
+                "Montelukast",
+                "Omalizumab"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "Tiotropium is for maintenance, not acute exacerbation treatment.",
+                "Correct. Systemic steroids shorten recovery and reduce treatment failure in COPD exacerbations.",
+                "Montelukast is for asthma and has no role in COPD exacerbations.",
+                "Omalizumab is for allergic asthma, not COPD."
+            ]
+        },
+        {
+            "question": "Which asthma biologic is indicated for severe eosinophilic asthma?",
+            "options": [
+                "Mepolizumab",
+                "Omalizumab",
+                "Ipratropium",
+                "Salmeterol"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Mepolizumab targets IL-5 and is used for eosinophilic asthma.",
+                "Omalizumab targets IgE and is indicated for allergic asthma with elevated IgE.",
+                "Ipratropium is a SAMA used for COPD and some asthma exacerbations, not a biologic.",
+                "Salmeterol is a LABA for maintenance and is not a biologic."
             ]
         }
     ],
@@ -571,6 +1051,86 @@ const questionBank = {
                 "Amitriptyline (TCA) is effective for both but used less frequently as first-line due to side effects.",
                 "Correct. Both are effective, though Duloxetine is often preferred for its better safety profile."
             ]
+        },
+        {
+            "question": "A patient on Paroxetine complains of sexual dysfunction and weight gain. Which antidepressant has the lowest risk of sexual side effects?",
+            "options": [
+                "Bupropion",
+                "Sertraline",
+                "Venlafaxine",
+                "Fluoxetine"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Bupropion has minimal sexual side effects and may improve libido.",
+                "Sertraline (SSRI) commonly causes sexual dysfunction.",
+                "Venlafaxine (SNRI) can still cause sexual dysfunction.",
+                "Fluoxetine (SSRI) is associated with sexual adverse effects."
+            ]
+        },
+        {
+            "question": "A patient with MDD and insomnia needs an antidepressant that can aid sleep. Which is most appropriate?",
+            "options": [
+                "Mirtazapine",
+                "Fluoxetine",
+                "Bupropion",
+                "Duloxetine"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Mirtazapine is sedating and often chosen for depression with insomnia.",
+                "Fluoxetine is activating and may worsen insomnia.",
+                "Bupropion is activating and can worsen sleep.",
+                "Duloxetine is generally neutral or activating, not sedating."
+            ]
+        },
+        {
+            "question": "Which antidepressant is most associated with QT prolongation at higher doses?",
+            "options": [
+                "Citalopram",
+                "Bupropion",
+                "Mirtazapine",
+                "Venlafaxine"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Citalopram has a dose-dependent QT risk and a max recommended dose.",
+                "Bupropion is not associated with QT prolongation.",
+                "Mirtazapine has minimal QT effects.",
+                "Venlafaxine can affect BP but is less associated with QT risk."
+            ]
+        },
+        {
+            "question": "A patient with depression on an SSRI needs to start linezolid. What is the safest approach?",
+            "options": [
+                "Continue SSRI and start linezolid",
+                "Hold SSRI during linezolid therapy if possible",
+                "Switch SSRI to bupropion one day before",
+                "Add benzodiazepine to prevent serotonin syndrome"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "Concurrent use increases serotonin syndrome risk because linezolid is a reversible MAOI.",
+                "Correct. If clinically feasible, hold serotonergic agents during linezolid therapy and monitor.",
+                "A one-day switch is not sufficient and does not eliminate serotonergic risk.",
+                "Benzodiazepines treat symptoms but do not prevent serotonin syndrome."
+            ]
+        },
+        {
+            "question": "After starting an SSRI for MDD, when should you first expect to see meaningful symptom improvement?",
+            "options": [
+                "24-48 hours",
+                "1 week",
+                "4-6 weeks",
+                "6 months"
+            ],
+            "correctAnswer": 2,
+            "explanations": [
+                "SSRIs do not provide immediate antidepressant effects in 24-48 hours.",
+                "One week is too early for most patients to notice full benefit.",
+                "Correct. Clinically meaningful improvement typically appears after 4-6 weeks.",
+                "Six months is far beyond the expected onset window."
+            ]
         }
     ],
     "Compounding & Safety": [
@@ -652,6 +1212,86 @@ const questionBank = {
                 "30 days is for water-containing TOPICAL formulations.",
                 "Correct. Non-aqueous formulations (petrolatum-based) are good for 6 months.",
                 "1 year is beyond the USP standard for compounded products."
+            ]
+        },
+        {
+            "question": "Which stability concern most limits the beyond-use date for water-containing oral compounded liquids?",
+            "options": [
+                "Oxidation only",
+                "Microbial growth",
+                "Photodegradation only",
+                "Loss of viscosity"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "Oxidation can occur, but it is not the primary limiting factor for aqueous oral formulations.",
+                "Correct. Aqueous formulations have the highest risk of microbial growth, so BUD is shorter.",
+                "Photodegradation is drug-specific and not the main global limitation.",
+                "Viscosity changes are possible but not the main safety concern driving BUD."
+            ]
+        },
+        {
+            "question": "Which element is required on a non-sterile compounded product label?",
+            "options": [
+                "Lot number only",
+                "BUD and storage conditions",
+                "Manufacturer NDC",
+                "Only patient name and directions"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "Lot number is useful, but BUD and storage are required and more critical.",
+                "Correct. USP requires BUD and appropriate storage conditions on compounded labels.",
+                "Compounded products do not have manufacturer NDCs.",
+                "Patient name and directions are required but not sufficient alone."
+            ]
+        },
+        {
+            "question": "Which engineering control is used to compound hazardous sterile drugs while protecting both the product and the operator?",
+            "options": [
+                "Laminar airflow workbench (LAFW)",
+                "Compounding aseptic isolator (CAI)",
+                "Class II biological safety cabinet (BSC)",
+                "Horizontal clean bench"
+            ],
+            "correctAnswer": 2,
+            "explanations": [
+                "LAFWs protect the product but not the operator from hazardous drugs.",
+                "CAIs may be used, but a Class II BSC is the standard for hazardous sterile compounding.",
+                "Correct. Class II BSCs provide product and personnel protection with HEPA-filtered airflow.",
+                "Horizontal clean benches are not appropriate for hazardous drugs."
+            ]
+        },
+        {
+            "question": "Which cleaning agent is typically used for routine deactivation of hazardous drug residues per USP 800?",
+            "options": [
+                "Sterile water",
+                "Isopropyl alcohol",
+                "Sodium hypochlorite",
+                "Soap and water only"
+            ],
+            "correctAnswer": 2,
+            "explanations": [
+                "Sterile water does not deactivate hazardous drug residues.",
+                "Isopropyl alcohol sanitizes but does not reliably deactivate HD residues.",
+                "Correct. Sodium hypochlorite (bleach) is commonly used for deactivation per USP 800.",
+                "Soap and water can clean but are insufficient for deactivation."
+            ]
+        },
+        {
+            "question": "What is the minimum frequency for sterile compounding personnel competency (media-fill and fingertip testing) under USP 797?",
+            "options": [
+                "Every 30 days",
+                "Every 6 months",
+                "Every 12 months",
+                "Only at initial hire"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "Every 30 days is not the standard requirement for ongoing competency.",
+                "Correct. USP 797 requires at least every 6 months for low/medium-risk compounding personnel.",
+                "Annual testing is too infrequent and does not meet USP 797 for most compounding.",
+                "Initial testing alone is insufficient; ongoing competency is required."
             ]
         }
     ],
@@ -735,6 +1375,86 @@ const questionBank = {
                 "Oprelvekin stimulates platelets.",
                 "Ferrous sulfate is for iron deficiency."
             ]
+        },
+        {
+            "question": "Which agent is used for chemotherapy extravasation caused by anthracyclines?",
+            "options": [
+                "Dexrazoxane",
+                "Amifostine",
+                "Leucovorin",
+                "Mesna"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Dexrazoxane is used for anthracycline extravasation and cardioprotection.",
+                "Amifostine is used for cisplatin nephroprotection, not extravasation.",
+                "Leucovorin rescues methotrexate toxicity.",
+                "Mesna protects the bladder from acrolein with cyclophosphamide/ifosfamide."
+            ]
+        },
+        {
+            "question": "Which antiemetic class is most effective for highly emetogenic chemotherapy when combined with a 5-HT3 antagonist and dexamethasone?",
+            "options": [
+                "NK1 receptor antagonists",
+                "Dopamine antagonists",
+                "Antihistamines",
+                "Anticholinergics"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. NK1 antagonists (e.g., aprepitant) are essential for highly emetogenic regimens.",
+                "Dopamine antagonists are used for breakthrough nausea but are not primary prophylaxis here.",
+                "Antihistamines are more for motion-related nausea.",
+                "Anticholinergics are not standard for CINV prophylaxis."
+            ]
+        },
+        {
+            "question": "Which chemotherapy agent is most associated with hemorrhagic cystitis?",
+            "options": [
+                "Cyclophosphamide",
+                "Methotrexate",
+                "Paclitaxel",
+                "Imatinib"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Cyclophosphamide produces acrolein, which irritates the bladder.",
+                "Methotrexate is more associated with mucositis and myelosuppression.",
+                "Paclitaxel is associated with neuropathy and hypersensitivity reactions.",
+                "Imatinib is linked to edema and cytopenias, not cystitis."
+            ]
+        },
+        {
+            "question": "Which supportive medication is used to prevent tumor lysis syndrome by lowering uric acid?",
+            "options": [
+                "Allopurinol",
+                "Leucovorin",
+                "Oprelvekin",
+                "Palonosetron"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Allopurinol reduces uric acid formation and is used for TLS prophylaxis.",
+                "Leucovorin is folinic acid rescue for methotrexate.",
+                "Oprelvekin stimulates platelet production.",
+                "Palonosetron is a 5-HT3 antiemetic."
+            ]
+        },
+        {
+            "question": "Which chemotherapy agent is most associated with pulmonary fibrosis?",
+            "options": [
+                "Bleomycin",
+                "Vinblastine",
+                "Doxorubicin",
+                "Carboplatin"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Bleomycin can cause dose-limiting pulmonary fibrosis.",
+                "Vinblastine is more associated with myelosuppression and neuropathy.",
+                "Doxorubicin causes cardiotoxicity, not pulmonary fibrosis.",
+                "Carboplatin is associated with myelosuppression and nephrotoxicity less than cisplatin."
+            ]
         }
     ],
     "Renal Disease & Electrolytes": [
@@ -816,6 +1536,86 @@ const questionBank = {
                 "Correct. Exceeding 12 mEq/L in 24 hours can cause irreversible brain damage.",
                 "This rate is dangerously high and will likely cause ODS.",
                 "Sodium must always be corrected slowly to avoid brain injury."
+            ]
+        },
+        {
+            "question": "A patient with CKD has metabolic acidosis (bicarbonate 16 mEq/L). Which therapy is most appropriate?",
+            "options": [
+                "Oral sodium bicarbonate",
+                "Acetazolamide",
+                "Potassium chloride",
+                "Furosemide"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Oral sodium bicarbonate is used to correct chronic metabolic acidosis in CKD.",
+                "Acetazolamide causes bicarbonate wasting and would worsen acidosis.",
+                "Potassium chloride does not correct acidosis and may worsen hyperkalemia.",
+                "Furosemide may help volume overload but does not directly correct acidosis."
+            ]
+        },
+        {
+            "question": "A patient has symptomatic hyponatremia with seizures and a sodium of 112 mEq/L. What is the best immediate treatment?",
+            "options": [
+                "Normal saline bolus",
+                "3% hypertonic saline",
+                "Fluid restriction only",
+                "Oral demeclocycline"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "Normal saline may not raise sodium quickly enough for severe symptoms.",
+                "Correct. Hypertonic saline is indicated for severe symptomatic hyponatremia (e.g., seizures).",
+                "Fluid restriction is for chronic, asymptomatic cases and is too slow here.",
+                "Demeclocycline is for chronic SIADH, not emergency seizures."
+            ]
+        },
+        {
+            "question": "Which diuretic is most appropriate for treating hypercalcemia?",
+            "options": [
+                "Furosemide",
+                "Hydrochlorothiazide",
+                "Spironolactone",
+                "Acetazolamide"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Loop diuretics increase calcium excretion and are used after volume repletion.",
+                "Thiazides increase calcium reabsorption and worsen hypercalcemia.",
+                "Spironolactone is potassium-sparing and does not lower calcium.",
+                "Acetazolamide affects bicarbonate, not calcium, and is not first-line."
+            ]
+        },
+        {
+            "question": "A patient on chronic lithium therapy presents with polyuria and polydipsia. Which condition is most likely?",
+            "options": [
+                "SIADH",
+                "Nephrogenic diabetes insipidus",
+                "Primary polydipsia",
+                "Acute glomerulonephritis"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "SIADH causes water retention and hyponatremia, not polyuria.",
+                "Correct. Lithium commonly causes nephrogenic diabetes insipidus.",
+                "Primary polydipsia is possible but less likely given lithium exposure.",
+                "Glomerulonephritis usually causes hematuria and proteinuria, not isolated polyuria."
+            ]
+        },
+        {
+            "question": "Which lab pattern is most consistent with pre-renal AKI?",
+            "options": [
+                "FeNa > 2% and muddy brown casts",
+                "BUN:Cr ratio > 20:1",
+                "Urine sodium > 40 mEq/L",
+                "Proteinuria and RBC casts"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "FeNa > 2% and muddy brown casts suggest intrinsic ATN.",
+                "Correct. Pre-renal AKI typically has a high BUN:Cr ratio due to increased urea reabsorption.",
+                "Urine sodium > 40 suggests intrinsic renal injury, not pre-renal.",
+                "Proteinuria and RBC casts suggest glomerulonephritis."
             ]
         }
     ],
@@ -899,6 +1699,86 @@ const questionBank = {
                 "Calcitonin is a hormone spray rarely used today.",
                 "Ibandronate is a bisphosphonate."
             ]
+        },
+        {
+            "question": "Which medication is used for acute gout flare management in a patient with stage 4 CKD?",
+            "options": [
+                "Indomethacin",
+                "Colchicine at standard dose",
+                "Low-dose corticosteroids",
+                "Probenecid"
+            ],
+            "correctAnswer": 2,
+            "explanations": [
+                "NSAIDs like indomethacin are avoided in advanced CKD due to nephrotoxicity.",
+                "Standard-dose colchicine can accumulate in CKD and cause toxicity; dose adjustments are required.",
+                "Correct. Short-course corticosteroids are preferred for acute gout in severe CKD.",
+                "Probenecid is ineffective in low renal function and is not for acute flares."
+            ]
+        },
+        {
+            "question": "When starting urate-lowering therapy, which prophylaxis should be used to prevent gout flares?",
+            "options": [
+                "Allopurinol alone is sufficient",
+                "Short-term colchicine or NSAID",
+                "High-dose prednisone long-term",
+                "Febuxostat plus probenecid"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "Allopurinol initiation can trigger flares and requires prophylaxis.",
+                "Correct. Low-dose colchicine or an NSAID is used for flare prophylaxis during ULT initiation.",
+                "Long-term high-dose steroids are not appropriate due to adverse effects.",
+                "Combination ULT is not first-line and does not replace flare prophylaxis."
+            ]
+        },
+        {
+            "question": "Which osteoporosis agent is contraindicated in patients with severe renal impairment (CrCl < 35 mL/min)?",
+            "options": [
+                "Alendronate",
+                "Denosumab",
+                "Raloxifene",
+                "Calcitonin"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Oral bisphosphonates like alendronate are contraindicated at CrCl < 35.",
+                "Denosumab can be used in CKD but monitor for hypocalcemia.",
+                "Raloxifene is not renally cleared and can be used.",
+                "Calcitonin does not have this renal contraindication."
+            ]
+        },
+        {
+            "question": "Which lab value should be optimized before initiating Denosumab for osteoporosis?",
+            "options": [
+                "Serum calcium",
+                "Serum potassium",
+                "INR",
+                "Creatine kinase"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Denosumab can cause hypocalcemia; ensure calcium and vitamin D are adequate.",
+                "Potassium is not directly affected by denosumab.",
+                "INR is unrelated to denosumab therapy.",
+                "Creatine kinase is not a monitoring parameter for denosumab."
+            ]
+        },
+        {
+            "question": "Which osteoporosis agent is anabolic and builds new bone?",
+            "options": [
+                "Teriparatide",
+                "Alendronate",
+                "Zoledronic acid",
+                "Denosumab"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Teriparatide is a PTH analog that stimulates bone formation.",
+                "Alendronate is antiresorptive, not anabolic.",
+                "Zoledronic acid is a bisphosphonate and antiresorptive.",
+                "Denosumab inhibits RANKL and is antiresorptive."
+            ]
         }
     ],
     "GI - GERD & PUD": [
@@ -980,6 +1860,86 @@ const questionBank = {
                 "Cimetidine is still available but rarely used due to drug interactions.",
                 "Correct. Ranitidine (Zantac) was removed from the market globally.",
                 "Nizatidine is still available but less commonly used."
+            ]
+        },
+        {
+            "question": "Which PPI should be taken 30-60 minutes before meals for maximal effect?",
+            "options": [
+                "Omeprazole",
+                "Pantoprazole IV",
+                "Famotidine",
+                "Sucralfate"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Oral PPIs should be taken before meals to inhibit active proton pumps.",
+                "IV pantoprazole bypasses the GI tract and does not have meal timing requirements.",
+                "Famotidine is an H2RA, not a PPI, and does not require pre-meal timing.",
+                "Sucralfate is a mucosal protectant and should be separated from meals and meds."
+            ]
+        },
+        {
+            "question": "A patient with suspected upper GI bleed from a peptic ulcer presents with melena. Which therapy is standard after endoscopic hemostasis?",
+            "options": [
+                "High-dose IV PPI",
+                "Misoprostol",
+                "Bismuth subsalicylate",
+                "Sucralfate alone"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. High-dose IV PPI reduces rebleeding risk after endoscopic therapy.",
+                "Misoprostol is for NSAID ulcer prevention, not acute bleeding management.",
+                "Bismuth is part of H. pylori regimens but not acute bleed management.",
+                "Sucralfate is not sufficient for acute bleed management."
+            ]
+        },
+        {
+            "question": "Which medication is most appropriate for a patient with GERD who needs rapid, short-term symptom relief?",
+            "options": [
+                "Calcium carbonate",
+                "Omeprazole",
+                "Pantoprazole",
+                "Sucralfate"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Antacids like calcium carbonate provide rapid symptomatic relief.",
+                "PPIs take longer to work and are for maintenance, not immediate relief.",
+                "Pantoprazole is a PPI and not immediate acting.",
+                "Sucralfate is mainly for ulcer protection, not rapid GERD relief."
+            ]
+        },
+        {
+            "question": "Which medication is most likely to worsen GERD symptoms by relaxing the lower esophageal sphincter?",
+            "options": [
+                "Nitrates",
+                "Metoclopramide",
+                "Sucralfate",
+                "Famotidine"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Nitrates relax smooth muscle and can lower LES tone.",
+                "Metoclopramide increases LES tone and improves gastric emptying.",
+                "Sucralfate coats ulcers and does not relax the LES.",
+                "Famotidine reduces acid but does not lower LES tone."
+            ]
+        },
+        {
+            "question": "A patient has confirmed H. pylori infection and a penicillin allergy. Which regimen is appropriate?",
+            "options": [
+                "PPI + Clarithromycin + Metronidazole",
+                "PPI + Amoxicillin + Clarithromycin",
+                "PPI + Amoxicillin + Metronidazole",
+                "PPI + Amoxicillin only"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. In penicillin allergy, replace amoxicillin with metronidazole in triple therapy.",
+                "Amoxicillin is contraindicated in true penicillin allergy.",
+                "Amoxicillin-containing regimens are not appropriate in allergy.",
+                "Single-agent therapy will fail and promotes resistance."
             ]
         }
     ],
@@ -1063,6 +2023,86 @@ const questionBank = {
                 "Iron does not affect weight.",
                 "Iron does not directly cause tachycardia."
             ]
+        },
+        {
+            "question": "Which medication is first-line for inducing remission in moderate-to-severe Crohn's disease?",
+            "options": [
+                "Oral mesalamine",
+                "Prednisone",
+                "Docusate",
+                "Loperamide"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "Mesalamine has limited benefit in Crohn's and is not first-line for moderate-to-severe flares.",
+                "Correct. Systemic corticosteroids are standard for induction in moderate-to-severe Crohn's flares.",
+                "Docusate is a stool softener and does not treat inflammation.",
+                "Loperamide is for symptomatic diarrhea and should be avoided in severe active disease."
+            ]
+        },
+        {
+            "question": "Which agent is a guanylate cyclase-C agonist used for chronic idiopathic constipation?",
+            "options": [
+                "Linaclotide",
+                "Lubiprostone",
+                "Methylnaltrexone",
+                "Senna"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Linaclotide activates GC-C, increasing chloride/bicarbonate secretion.",
+                "Lubiprostone is a chloride channel activator, not GC-C agonist.",
+                "Methylnaltrexone is a PAMORA for opioid-induced constipation.",
+                "Senna is a stimulant laxative."
+            ]
+        },
+        {
+            "question": "Which vaccination should be avoided in a patient receiving infliximab for IBD?",
+            "options": [
+                "Inactivated influenza vaccine",
+                "PCV20",
+                "Live attenuated zoster vaccine",
+                "Hepatitis B vaccine"
+            ],
+            "correctAnswer": 2,
+            "explanations": [
+                "Inactivated vaccines are safe and recommended on biologic therapy.",
+                "Pneumococcal vaccines are safe and recommended.",
+                "Correct. Live vaccines are generally contraindicated during biologic immunosuppression.",
+                "Hepatitis B vaccine is inactivated and safe."
+            ]
+        },
+        {
+            "question": "Which of the following is a classic adverse effect of sulfasalazine?",
+            "options": [
+                "Orange discoloration of secretions",
+                "Oligospermia and folate deficiency",
+                "Pulmonary fibrosis",
+                "QT prolongation"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "Orange discoloration is associated with rifampin.",
+                "Correct. Sulfasalazine can cause reversible oligospermia and impair folate absorption.",
+                "Pulmonary fibrosis is more associated with bleomycin or amiodarone.",
+                "QT prolongation is not a classic sulfasalazine effect."
+            ]
+        },
+        {
+            "question": "Which laxative is most appropriate for hepatic encephalopathy management?",
+            "options": [
+                "Lactulose",
+                "Polyethylene glycol",
+                "Bisacodyl",
+                "Docusate"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Lactulose traps ammonia in the gut and reduces serum levels.",
+                "PEG is an osmotic laxative but does not specifically treat encephalopathy.",
+                "Bisacodyl is a stimulant laxative without ammonia-lowering effect.",
+                "Docusate is a stool softener and not effective for encephalopathy."
+            ]
         }
     ],
     "Neurology - Epilepsy": [
@@ -1144,6 +2184,86 @@ const questionBank = {
                 "Correct. 10-20 mcg/mL is the target range for total phenytoin.",
                 "This would be highly toxic.",
                 "This is the therapeutic range for FREE phenytoin."
+            ]
+        },
+        {
+            "question": "Which antiepileptic is first-line for focal (partial) seizures?",
+            "options": [
+                "Carbamazepine",
+                "Ethosuximide",
+                "Clonazepam",
+                "Acetazolamide"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Carbamazepine is a classic first-line option for focal seizures.",
+                "Ethosuximide is specific for absence seizures.",
+                "Clonazepam is not first-line for focal seizures due to tolerance/sedation.",
+                "Acetazolamide is not a standard first-line AED."
+            ]
+        },
+        {
+            "question": "A patient on carbamazepine develops hyponatremia. What is the most likely mechanism?",
+            "options": [
+                "SIADH",
+                "Renal tubular acidosis",
+                "Diabetes insipidus",
+                "Adrenal insufficiency"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Carbamazepine can cause SIADH leading to hyponatremia.",
+                "RTA causes metabolic acidosis, not isolated hyponatremia.",
+                "DI causes hypernatremia due to free water loss.",
+                "Adrenal insufficiency can cause hyponatremia, but carbamazepine is linked to SIADH."
+            ]
+        },
+        {
+            "question": "Which AED is most associated with behavioral changes such as irritability and mood swings?",
+            "options": [
+                "Levetiracetam",
+                "Valproic acid",
+                "Gabapentin",
+                "Ethosuximide"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Levetiracetam is notorious for behavioral and psychiatric adverse effects.",
+                "Valproic acid is more associated with weight gain, tremor, and hair loss.",
+                "Gabapentin is usually sedating but less linked to irritability.",
+                "Ethosuximide causes GI upset and fatigue, not prominent irritability."
+            ]
+        },
+        {
+            "question": "Which medication is used for acute management of status epilepticus?",
+            "options": [
+                "Lorazepam IV",
+                "Topiramate",
+                "Lamotrigine",
+                "Ethosuximide"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. IV benzodiazepines like lorazepam are first-line for acute status.",
+                "Topiramate is not used for acute termination of status.",
+                "Lamotrigine is for maintenance and requires slow titration.",
+                "Ethosuximide is for absence seizures only."
+            ]
+        },
+        {
+            "question": "Which AED is most associated with kidney stones and weight loss?",
+            "options": [
+                "Topiramate",
+                "Valproic acid",
+                "Carbamazepine",
+                "Phenytoin"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Topiramate can cause nephrolithiasis and weight loss due to carbonic anhydrase inhibition.",
+                "Valproic acid is associated with weight gain and tremor.",
+                "Carbamazepine is associated with hyponatremia and diplopia.",
+                "Phenytoin is linked to gingival hyperplasia and ataxia."
             ]
         }
     ],
@@ -1227,6 +2347,86 @@ const questionBank = {
                 "Rasagiline is an MAO-B inhibitor.",
                 "Apomorphine is an injectable 'rescue' dopamine agonist."
             ]
+        },
+        {
+            "question": "Which medication is used for mild to moderate Alzheimer's disease and is dosed once daily?",
+            "options": [
+                "Donepezil",
+                "Memantine",
+                "Selegiline",
+                "Pramipexole"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Donepezil is an acetylcholinesterase inhibitor used in mild to moderate AD.",
+                "Memantine is used for moderate to severe AD, not typically first-line for mild disease.",
+                "Selegiline is an MAO-B inhibitor for Parkinson's.",
+                "Pramipexole is a dopamine agonist for Parkinson's."
+            ]
+        },
+        {
+            "question": "Which Parkinson's medication is a COMT inhibitor used to extend the effect of Levodopa?",
+            "options": [
+                "Entacapone",
+                "Rasagiline",
+                "Trihexyphenidyl",
+                "Bromocriptine"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Entacapone inhibits COMT, reducing Levodopa breakdown.",
+                "Rasagiline is an MAO-B inhibitor, not a COMT inhibitor.",
+                "Trihexyphenidyl is an anticholinergic used mainly for tremor.",
+                "Bromocriptine is a dopamine agonist."
+            ]
+        },
+        {
+            "question": "A Parkinson's patient develops visual hallucinations on dopaminergic therapy. Which is the most appropriate approach?",
+            "options": [
+                "Increase Levodopa dose",
+                "Switch to a typical antipsychotic",
+                "Reduce dopaminergic burden and consider quetiapine",
+                "Add metoclopramide"
+            ],
+            "correctAnswer": 2,
+            "explanations": [
+                "Increasing Levodopa can worsen hallucinations.",
+                "Typical antipsychotics worsen Parkinsonism due to dopamine blockade.",
+                "Correct. Reduce dopaminergic agents if possible and use a Parkinson-friendly antipsychotic like quetiapine.",
+                "Metoclopramide is a dopamine antagonist that can worsen Parkinson's symptoms."
+            ]
+        },
+        {
+            "question": "Which Alzheimer's medication works via NMDA receptor antagonism?",
+            "options": [
+                "Memantine",
+                "Rivastigmine",
+                "Donepezil",
+                "Galantamine"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Memantine is an NMDA receptor antagonist used in moderate to severe AD.",
+                "Rivastigmine is a cholinesterase inhibitor.",
+                "Donepezil is a cholinesterase inhibitor.",
+                "Galantamine is a cholinesterase inhibitor."
+            ]
+        },
+        {
+            "question": "Which Parkinson's medication is most helpful for tremor in younger patients but limited by anticholinergic side effects?",
+            "options": [
+                "Trihexyphenidyl",
+                "Levodopa/Carbidopa",
+                "Entacapone",
+                "Selegiline"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Anticholinergics like trihexyphenidyl help tremor but cause confusion, dry mouth, and constipation.",
+                "Levodopa treats all motor symptoms but is not specifically chosen for tremor alone.",
+                "Entacapone is a COMT inhibitor used as adjunct to levodopa.",
+                "Selegiline is an MAO-B inhibitor with modest symptomatic benefit."
+            ]
         }
     ],
     "Psychiatry - Schizophrenia & Bipolar": [
@@ -1308,6 +2508,86 @@ const questionBank = {
                 "Invega Sustenna is a second-generation LAI.",
                 "Aristada (Aripiprazole) is a second-generation LAI.",
                 "Correct. All are used to improve adherence in schizophrenia."
+            ]
+        },
+        {
+            "question": "Which antipsychotic has the highest risk of QT prolongation?",
+            "options": [
+                "Ziprasidone",
+                "Olanzapine",
+                "Aripiprazole",
+                "Risperidone"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Ziprasidone has a notable QT prolongation risk.",
+                "Olanzapine has higher metabolic risk but lower QT risk.",
+                "Aripiprazole is generally QT-neutral.",
+                "Risperidone can affect QT slightly but less than ziprasidone."
+            ]
+        },
+        {
+            "question": "Which medication is first-line for acute mania?",
+            "options": [
+                "Lithium",
+                "Sertraline",
+                "Bupropion",
+                "Fluoxetine"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Lithium is a mood stabilizer used for acute mania and maintenance.",
+                "SSRIs can precipitate mania and are not first-line for acute mania.",
+                "Bupropion is an antidepressant and can worsen mania.",
+                "Fluoxetine is an SSRI and not used for acute mania."
+            ]
+        },
+        {
+            "question": "A patient on Clozapine develops fever and sore throat. What is the most appropriate action?",
+            "options": [
+                "Reassure and continue",
+                "Check ANC immediately",
+                "Add an antibiotic and continue",
+                "Reduce dose and recheck in 1 month"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "Fever and sore throat may signal neutropenia and require urgent evaluation.",
+                "Correct. Clozapine can cause agranulocytosis; ANC must be checked promptly.",
+                "Antibiotics are not a substitute for ANC monitoring and evaluation.",
+                "Waiting a month is unsafe given potential agranulocytosis."
+            ]
+        },
+        {
+            "question": "Which medication is associated with hyperprolactinemia and sexual dysfunction?",
+            "options": [
+                "Risperidone",
+                "Clozapine",
+                "Quetiapine",
+                "Aripiprazole"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Risperidone commonly increases prolactin levels.",
+                "Clozapine is less likely to elevate prolactin.",
+                "Quetiapine has low prolactin effects.",
+                "Aripiprazole can lower prolactin due to partial agonism."
+            ]
+        },
+        {
+            "question": "Which mood stabilizer is contraindicated in pregnancy due to neural tube defects?",
+            "options": [
+                "Valproic acid",
+                "Lamotrigine",
+                "Quetiapine",
+                "Lithium"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Valproic acid has the highest teratogenic risk, including neural tube defects.",
+                "Lamotrigine has a lower teratogenic risk and is often preferred if needed.",
+                "Quetiapine is an antipsychotic with less specific teratogenic risk.",
+                "Lithium is associated with Ebstein anomaly but is not the highest-risk option listed."
             ]
         }
     ],
@@ -1391,6 +2671,86 @@ const questionBank = {
                 "Rizatriptan is a triptan for acute treatment.",
                 "DHE is an ergot alkaloid for acute treatment."
             ]
+        },
+        {
+            "question": "Which opioid is safest in severe renal impairment due to inactive metabolites?",
+            "options": [
+                "Morphine",
+                "Meperidine",
+                "Hydromorphone",
+                "Fentanyl"
+            ],
+            "correctAnswer": 3,
+            "explanations": [
+                "Morphine has active metabolites that accumulate in renal failure.",
+                "Meperidine has a toxic metabolite (normeperidine) that can cause seizures.",
+                "Hydromorphone has metabolites that can accumulate, though less than morphine.",
+                "Correct. Fentanyl is preferred in severe renal impairment due to minimal active metabolites."
+            ]
+        },
+        {
+            "question": "Which medication is first-line for acute migraine in a patient with uncontrolled hypertension?",
+            "options": [
+                "Sumatriptan",
+                "Naproxen",
+                "Ergotamine",
+                "Rizatriptan"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "Triptans are contraindicated in uncontrolled hypertension due to vasoconstriction.",
+                "Correct. NSAIDs like naproxen are appropriate for acute migraine when triptans are contraindicated.",
+                "Ergotamines are also vasoconstrictive and contraindicated in uncontrolled HTN.",
+                "Rizatriptan is a triptan and contraindicated in uncontrolled HTN."
+            ]
+        },
+        {
+            "question": "A patient on chronic opioids reports increasing pain despite dose escalation. What is the most likely explanation?",
+            "options": [
+                "Opioid-induced hyperalgesia",
+                "Improved analgesic response",
+                "Allergic reaction",
+                "Serotonin syndrome"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Opioid-induced hyperalgesia can cause increased sensitivity to pain despite higher doses.",
+                "If analgesia improved, pain would decrease, not worsen.",
+                "Allergic reactions cause rash or anaphylaxis, not worsening pain sensitivity.",
+                "Serotonin syndrome presents with autonomic and neuromuscular findings, not isolated hyperalgesia."
+            ]
+        },
+        {
+            "question": "Which medication is used for migraine prevention and can cause weight loss and cognitive slowing?",
+            "options": [
+                "Topiramate",
+                "Propranolol",
+                "Amitriptyline",
+                "Verapamil"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Topiramate can cause weight loss and word-finding difficulty.",
+                "Propranolol can cause fatigue and bradycardia but not weight loss.",
+                "Amitriptyline often causes weight gain and sedation.",
+                "Verapamil is more often used for cluster headaches, not typical migraine prevention."
+            ]
+        },
+        {
+            "question": "Which adjuvant analgesic is most appropriate for diabetic neuropathy?",
+            "options": [
+                "Duloxetine",
+                "Acetaminophen",
+                "Hydrocodone",
+                "Ibuprofen"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Duloxetine is approved for diabetic neuropathic pain.",
+                "Acetaminophen is not effective for neuropathic pain.",
+                "Opioids are not first-line for neuropathic pain and carry dependence risk.",
+                "NSAIDs are not effective for neuropathic pain."
+            ]
         }
     ],
     "Immunizations": [
@@ -1472,6 +2832,86 @@ const questionBank = {
                 "Correct. Tdap is given to protect the baby from whooping cough via maternal antibodies.",
                 "Varicella is a LIVE vaccine and is contraindicated in pregnancy.",
                 "HPV is not recommended during pregnancy."
+            ]
+        },
+        {
+            "question": "Which vaccine is contraindicated in severely immunocompromised patients due to being live-attenuated?",
+            "options": [
+                "MMR",
+                "Hepatitis A",
+                "PCV20",
+                "Tdap"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. MMR is live-attenuated and generally contraindicated in severe immunosuppression.",
+                "Hepatitis A is inactivated and can be given when indicated.",
+                "PCV20 is a conjugate inactivated vaccine and safe.",
+                "Tdap is inactivated and safe in immunocompromised patients."
+            ]
+        },
+        {
+            "question": "Which vaccine is recommended annually for nearly all patients 6 months and older?",
+            "options": [
+                "Influenza",
+                "Shingrix",
+                "MMR",
+                "Hepatitis B"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Seasonal influenza vaccination is recommended annually for most patients >= 6 months.",
+                "Shingrix is a 2-dose series, not annual.",
+                "MMR is given as a childhood series or for catch-up, not annually.",
+                "Hepatitis B is a series, not annual."
+            ]
+        },
+        {
+            "question": "Which vaccine should be avoided during pregnancy due to being live?",
+            "options": [
+                "Varicella",
+                "Influenza (inactivated)",
+                "Tdap",
+                "Hepatitis B"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Varicella is a live vaccine and is contraindicated in pregnancy.",
+                "Inactivated flu vaccine is recommended during pregnancy.",
+                "Tdap is recommended during each pregnancy.",
+                "Hepatitis B is inactivated and can be given if indicated."
+            ]
+        },
+        {
+            "question": "A patient had an anaphylactic reaction to a prior dose of a vaccine. What is the best next step?",
+            "options": [
+                "Proceed with revaccination and observe",
+                "Do not administer that vaccine again",
+                "Give half the dose",
+                "Premedicate with antihistamines and vaccinate"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "Revaccination after anaphylaxis is unsafe without specialist evaluation.",
+                "Correct. Anaphylaxis to a prior dose is a contraindication to future doses of that vaccine.",
+                "Reducing dose does not eliminate risk of severe reaction.",
+                "Premedication does not prevent anaphylaxis and is not sufficient."
+            ]
+        },
+        {
+            "question": "Which vaccine is a recombinant subunit vaccine?",
+            "options": [
+                "Shingrix",
+                "Flumist",
+                "MMR",
+                "Varicella"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Shingrix is a recombinant zoster vaccine with adjuvant.",
+                "Flumist is live-attenuated influenza vaccine.",
+                "MMR is live-attenuated.",
+                "Varicella is live-attenuated."
             ]
         }
     ],
@@ -1555,6 +2995,86 @@ const questionBank = {
                 "Calcium disodium EDTA is for Lead.",
                 "Penicillamine is for Wilson's disease (Copper)."
             ]
+        },
+        {
+            "question": "Which antidote is used for beta-blocker overdose?",
+            "options": [
+                "Glucagon",
+                "Naloxone",
+                "Flumazenil",
+                "Fomepizole"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Glucagon increases cAMP independent of beta receptors, improving heart rate and contractility.",
+                "Naloxone is for opioid overdose.",
+                "Flumazenil is for benzodiazepine overdose.",
+                "Fomepizole is for toxic alcohols."
+            ]
+        },
+        {
+            "question": "A patient presents with metabolic acidosis, elevated osmolar gap, and visual disturbances after ingesting an unknown solvent. What is the antidote?",
+            "options": [
+                "Fomepizole",
+                "N-acetylcysteine",
+                "Hydroxocobalamin",
+                "Atropine"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. This presentation suggests methanol; fomepizole inhibits alcohol dehydrogenase.",
+                "NAC is for acetaminophen toxicity.",
+                "Hydroxocobalamin is for cyanide poisoning.",
+                "Atropine is for organophosphate poisoning."
+            ]
+        },
+        {
+            "question": "Which toxidrome is characterized by hyperthermia, dry skin, mydriasis, and urinary retention?",
+            "options": [
+                "Cholinergic",
+                "Anticholinergic",
+                "Opioid",
+                "Sedative-hypnotic"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "Cholinergic causes SLUDGE and diaphoresis (wet), not dry skin.",
+                "Correct. Anticholinergic toxicity causes dry skin, mydriasis, and urinary retention.",
+                "Opioid toxicity causes miosis and respiratory depression.",
+                "Sedative-hypnotics cause CNS depression without classic anticholinergic signs."
+            ]
+        },
+        {
+            "question": "Which antidote is used for cyanide poisoning?",
+            "options": [
+                "Hydroxocobalamin",
+                "DigiFab",
+                "Protamine",
+                "Vitamin K"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Hydroxocobalamin binds cyanide to form cyanocobalamin.",
+                "DigiFab is for digoxin toxicity.",
+                "Protamine is for heparin reversal.",
+                "Vitamin K is for warfarin reversal."
+            ]
+        },
+        {
+            "question": "Which intervention is most appropriate for tricyclic antidepressant overdose with QRS widening?",
+            "options": [
+                "Sodium bicarbonate IV",
+                "Naloxone",
+                "Activated charcoal only",
+                "Flumazenil"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Sodium bicarbonate narrows QRS and treats arrhythmias in TCA overdose.",
+                "Naloxone is for opioid toxicity.",
+                "Activated charcoal may help if early, but does not treat QRS widening.",
+                "Flumazenil is for benzodiazepine overdose and is not indicated here."
+            ]
         }
     ],
     "Federal Law & Regulatory": [
@@ -1636,6 +3156,86 @@ const questionBank = {
                 "1938 Act only required proof of SAFETY.",
                 "Correct. 1962 Amendment was the first to require proof of EFFICACY.",
                 "1951 established the distinction between OTC and Prescription."
+            ]
+        },
+        {
+            "question": "Which controlled substance schedule allows no refills and requires a new prescription each time?",
+            "options": [
+                "Schedule II",
+                "Schedule III",
+                "Schedule IV",
+                "Schedule V"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Schedule II prescriptions cannot be refilled under federal law.",
+                "C-III can have refills, so this is incorrect.",
+                "C-IV can have refills, so this is incorrect.",
+                "C-V can have refills, so this is incorrect."
+            ]
+        },
+        {
+            "question": "Under federal law, what is the maximum number of refills for Schedule III-V prescriptions within 6 months?",
+            "options": [
+                "3 refills",
+                "5 refills",
+                "6 refills",
+                "Unlimited refills"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "Three refills is too low; federal law allows more.",
+                "Correct. C-III to C-V prescriptions allow up to 5 refills in 6 months.",
+                "Six refills exceeds the federal limit.",
+                "Unlimited refills are not allowed for controlled substances."
+            ]
+        },
+        {
+            "question": "Which DEA form is used to order Schedule II controlled substances?",
+            "options": [
+                "DEA Form 222",
+                "DEA Form 224",
+                "DEA Form 106",
+                "DEA Form 41"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. DEA Form 222 (or CSOS) is required to order Schedule II drugs.",
+                "Form 224 is for DEA registration of a pharmacy.",
+                "Form 106 is for theft or loss reporting.",
+                "Form 41 is for destruction/disposal."
+            ]
+        },
+        {
+            "question": "In an emergency, a C-II prescription may be phoned in. How long does the prescriber have to provide a written or electronic follow-up?",
+            "options": [
+                "24 hours",
+                "48 hours",
+                "7 days",
+                "14 days"
+            ],
+            "correctAnswer": 2,
+            "explanations": [
+                "24 hours is too short per federal rules.",
+                "48 hours is not the federal standard.",
+                "Correct. A follow-up written/electronic prescription must be received within 7 days.",
+                "14 days exceeds the federal limit."
+            ]
+        },
+        {
+            "question": "Which form is used to report significant loss or theft of controlled substances to the DEA?",
+            "options": [
+                "DEA Form 41",
+                "DEA Form 106",
+                "DEA Form 224",
+                "DEA Form 222"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "Form 41 is for drug destruction, not theft/loss reporting.",
+                "Correct. DEA Form 106 is used to report significant loss or theft.",
+                "Form 224 is for registration.",
+                "Form 222 is for ordering Schedule II drugs."
             ]
         }
     ],
@@ -1719,6 +3319,86 @@ const questionBank = {
                 "Incorrect math.",
                 "Incorrect math."
             ]
+        },
+        {
+            "question": "Vancomycin 1 g in 250 mL is to infuse over 2 hours. What is the rate in mL/hr?",
+            "options": [
+                "60 mL/hr",
+                "100 mL/hr",
+                "125 mL/hr",
+                "150 mL/hr"
+            ],
+            "correctAnswer": 2,
+            "explanations": [
+                "250 mL over 2 hours is not 60 mL/hr.",
+                "This would be 200 mL over 2 hours, not 250 mL.",
+                "Correct. 250 mL / 2 hr = 125 mL/hr.",
+                "150 mL/hr would finish in under 2 hours."
+            ]
+        },
+        {
+            "question": "A child weighs 22 lb and needs Amoxicillin 45 mg/kg/day divided BID. The suspension is 250 mg/5 mL. What is the dose per administration in mL?",
+            "options": [
+                "2.5 mL",
+                "4.5 mL",
+                "6.5 mL",
+                "9 mL"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "22 lb is 10 kg, so 45 mg/kg/day = 450 mg/day; this is too low for a single dose.",
+                "Correct. 450 mg/day / 2 = 225 mg per dose. 250 mg/5 mL = 50 mg/mL. 225/50 = 4.5 mL.",
+                "This would correspond to 325 mg per dose, too high.",
+                "9 mL would be 450 mg per dose, which is double the correct dose."
+            ]
+        },
+        {
+            "question": "Calculate CrCl for a 65-year-old male, 70 kg, SCr 1.4 mg/dL (Cockcroft-Gault).",
+            "options": [
+                "25 mL/min",
+                "52 mL/min",
+                "75 mL/min",
+                "95 mL/min"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "Too low; this would require a much higher SCr or lower weight.",
+                "Correct. (140-65)*70 / (72*1.4) = 5250/100.8 ≈ 52 mL/min.",
+                "Too high for the given age/SCr.",
+                "Much too high; would suggest near-normal renal function."
+            ]
+        },
+        {
+            "question": "How many mg of lidocaine are in 5 mL of a 2% solution?",
+            "options": [
+                "20 mg",
+                "50 mg",
+                "100 mg",
+                "200 mg"
+            ],
+            "correctAnswer": 2,
+            "explanations": [
+                "2% = 20 mg/mL, so 5 mL is more than 20 mg.",
+                "50 mg would be 2.5 mL of a 2% solution, not 5 mL.",
+                "Correct. 2% = 2 g/100 mL = 20 mg/mL. 20 * 5 = 100 mg.",
+                "200 mg would be 10 mL of a 2% solution."
+            ]
+        },
+        {
+            "question": "Heparin 25,000 units in 250 mL is ordered at 1,000 units/hr. What is the infusion rate in mL/hr?",
+            "options": [
+                "5 mL/hr",
+                "10 mL/hr",
+                "15 mL/hr",
+                "20 mL/hr"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "5 mL/hr would deliver only 500 units/hr.",
+                "Correct. 25,000 units / 250 mL = 100 units/mL. 1,000 units/hr / 100 = 10 mL/hr.",
+                "15 mL/hr would deliver 1,500 units/hr.",
+                "20 mL/hr would deliver 2,000 units/hr."
+            ]
         }
     ],
     "OTC & Self-Care": [
@@ -1800,6 +3480,86 @@ const questionBank = {
                 "Naproxen (Aleve) is an NSAID with high GI risk.",
                 "Correct. Tylenol is safe for the stomach as it doesn't affect the gut lining.",
                 "Aspirin is highly irritating to the GI tract."
+            ]
+        },
+        {
+            "question": "Which OTC antihistamine is least sedating?",
+            "options": [
+                "Diphenhydramine",
+                "Chlorpheniramine",
+                "Loratadine",
+                "Doxylamine"
+            ],
+            "correctAnswer": 2,
+            "explanations": [
+                "Diphenhydramine is a first-generation antihistamine and highly sedating.",
+                "Chlorpheniramine is first-generation and sedating.",
+                "Correct. Loratadine is a second-generation antihistamine with minimal sedation.",
+                "Doxylamine is a highly sedating first-generation antihistamine."
+            ]
+        },
+        {
+            "question": "Which OTC product is first-line for acute diarrhea without fever or blood?",
+            "options": [
+                "Loperamide",
+                "Bismuth subsalicylate",
+                "Psyllium",
+                "Senna"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Loperamide decreases gut motility and is first-line for uncomplicated acute diarrhea.",
+                "Bismuth can help but is generally second-line for symptom relief.",
+                "Psyllium is a bulk-forming fiber used for constipation.",
+                "Senna is a stimulant laxative and would worsen diarrhea."
+            ]
+        },
+        {
+            "question": "A patient asks for an OTC option for allergic rhinitis with nasal congestion. Which is most appropriate?",
+            "options": [
+                "Fluticasone nasal spray",
+                "Dextromethorphan",
+                "Guaifenesin",
+                "Calcium carbonate"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Intranasal steroids are first-line for allergic rhinitis with congestion.",
+                "Dextromethorphan is for cough suppression.",
+                "Guaifenesin is an expectorant for chest congestion.",
+                "Calcium carbonate is an antacid."
+            ]
+        },
+        {
+            "question": "Which OTC product is appropriate for treating athlete's foot (tinea pedis)?",
+            "options": [
+                "Terbinafine 1% cream",
+                "Hydrocortisone 1% cream",
+                "Neosporin",
+                "Zinc oxide"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Terbinafine is an antifungal and first-line for tinea pedis.",
+                "Hydrocortisone may reduce itching but can worsen fungal infections.",
+                "Neosporin treats bacterial infections, not fungal.",
+                "Zinc oxide is a skin protectant for diaper rash."
+            ]
+        },
+        {
+            "question": "Which OTC product is best for treating mild heartburn on an as-needed basis?",
+            "options": [
+                "Calcium carbonate",
+                "Omeprazole",
+                "Famotidine scheduled twice daily",
+                "Sucralfate"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Antacids like calcium carbonate provide rapid, short-term relief.",
+                "Omeprazole is for longer-term control, not immediate relief.",
+                "Scheduled H2 blockers can help, but antacids are faster for PRN use.",
+                "Sucralfate is for ulcers and not for quick heartburn relief."
             ]
         }
     ],
@@ -1883,6 +3643,86 @@ const questionBank = {
                 "Incorrect.",
                 "Incorrect."
             ]
+        },
+        {
+            "question": "What is the recommended initial fluid bolus for septic shock resuscitation?",
+            "options": [
+                "10 mL/kg",
+                "20 mL/kg",
+                "30 mL/kg",
+                "50 mL/kg"
+            ],
+            "correctAnswer": 2,
+            "explanations": [
+                "10 mL/kg is too low for initial septic shock resuscitation.",
+                "20 mL/kg may be used in some settings, but standard is higher.",
+                "Correct. 30 mL/kg of crystalloid is the standard initial bolus.",
+                "50 mL/kg is excessive and risks volume overload."
+            ]
+        },
+        {
+            "question": "A patient with torsades de pointes is hemodynamically unstable. Which medication is first-line?",
+            "options": [
+                "Amiodarone",
+                "Magnesium sulfate",
+                "Lidocaine",
+                "Adenosine"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "Amiodarone can prolong QT and may worsen torsades.",
+                "Correct. IV magnesium sulfate is first-line for torsades.",
+                "Lidocaine is for ventricular arrhythmias but not first-line for torsades.",
+                "Adenosine is used for SVT, not torsades."
+            ]
+        },
+        {
+            "question": "Which ventilation strategy is recommended for ARDS?",
+            "options": [
+                "High tidal volume (10-12 mL/kg)",
+                "Low tidal volume (6 mL/kg ideal body weight)",
+                "No PEEP",
+                "High respiratory rate with large tidal volume"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "High tidal volumes increase barotrauma and worsen outcomes in ARDS.",
+                "Correct. Low tidal volume ventilation reduces ventilator-induced lung injury.",
+                "PEEP is typically used to improve oxygenation in ARDS.",
+                "Large tidal volumes increase lung injury risk."
+            ]
+        },
+        {
+            "question": "A patient remains hypotensive on high-dose norepinephrine in septic shock. Which agent is commonly added next?",
+            "options": [
+                "Vasopressin",
+                "Dopamine",
+                "Phenylephrine only",
+                "Dobutamine"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Vasopressin is a common second-line agent added to norepinephrine.",
+                "Dopamine is less preferred due to arrhythmias.",
+                "Phenylephrine may be used in select cases but is not the common next add-on.",
+                "Dobutamine is for low cardiac output, not primary vasopressor support."
+            ]
+        },
+        {
+            "question": "Which medication is preferred for rapid sequence intubation (RSI) in a hemodynamically unstable patient due to minimal BP effects?",
+            "options": [
+                "Etomidate",
+                "Propofol",
+                "Midazolam",
+                "Thiopental"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Etomidate is hemodynamically neutral and often used in unstable patients.",
+                "Propofol can cause significant hypotension.",
+                "Midazolam can cause hypotension and has slower onset.",
+                "Thiopental causes hypotension and is rarely used."
+            ]
         }
     ],
     "Women's Health": [
@@ -1964,6 +3804,86 @@ const questionBank = {
                 "Depo-Provera has a BBW for bone loss, not COCs.",
                 "Correct. Estrogen + Smoking + Age 35+ = high risk of blood clots and stroke.",
                 "Incorrect."
+            ]
+        },
+        {
+            "question": "Which condition is a contraindication to combined hormonal contraception?",
+            "options": [
+                "Migraine with aura",
+                "Controlled asthma",
+                "History of acne",
+                "Seasonal allergies"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Migraine with aura increases stroke risk with estrogen.",
+                "Asthma is not a contraindication to combined hormonal contraception.",
+                "Acne is not a contraindication and may improve with COCs.",
+                "Seasonal allergies are not a contraindication."
+            ]
+        },
+        {
+            "question": "Which emergency contraception is effective up to 5 days after unprotected intercourse and maintains efficacy closer to day 5?",
+            "options": [
+                "Ulipristal (Ella)",
+                "Levonorgestrel (Plan B)",
+                "Ethinyl estradiol/levonorgestrel (Yuzpe)",
+                "Depot medroxyprogesterone"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Ulipristal is effective up to 5 days and is more effective than LNG later in the window.",
+                "Levonorgestrel is best within 72 hours and less effective by day 5.",
+                "Yuzpe is less effective and more side effects than ulipristal.",
+                "Depo-Provera is contraception, not emergency contraception."
+            ]
+        },
+        {
+            "question": "Which contraception method is preferred immediately postpartum in a breastfeeding patient?",
+            "options": [
+                "Progestin-only pill",
+                "Combined oral contraceptive",
+                "Vaginal ring",
+                "Transdermal patch"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Progestin-only methods are preferred early postpartum in breastfeeding.",
+                "Estrogen-containing methods can decrease milk supply and are avoided early postpartum.",
+                "The vaginal ring contains estrogen and is not preferred immediately postpartum.",
+                "The patch is estrogen-containing and not preferred early postpartum."
+            ]
+        },
+        {
+            "question": "Which IUD provides non-hormonal contraception and can be used as emergency contraception?",
+            "options": [
+                "Copper IUD",
+                "Levonorgestrel IUD",
+                "Etonogestrel implant",
+                "Depot medroxyprogesterone"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. The copper IUD is non-hormonal and is effective as emergency contraception.",
+                "Levonorgestrel IUD is hormonal and not standard for emergency contraception.",
+                "The implant is hormonal and not used for emergency contraception.",
+                "Depot medroxyprogesterone is not used for emergency contraception."
+            ]
+        },
+        {
+            "question": "Which medication is first-line for bacterial vaginosis in a non-pregnant patient?",
+            "options": [
+                "Metronidazole",
+                "Fluconazole",
+                "Azithromycin",
+                "Acyclovir"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Metronidazole is first-line for BV.",
+                "Fluconazole treats yeast infections, not BV.",
+                "Azithromycin is not first-line for BV.",
+                "Acyclovir treats HSV, not BV."
             ]
         }
     ],
@@ -2047,6 +3967,86 @@ const questionBank = {
                 "Correct. Fludrocortisone is used specifically to replace aldosterone.",
                 "Prednisone has moderate activity but is not enough for Addison's."
             ]
+        },
+        {
+            "question": "Which lab pattern is consistent with primary hyperthyroidism?",
+            "options": [
+                "Low TSH, high free T4",
+                "High TSH, low free T4",
+                "High TSH, high free T4",
+                "Low TSH, low free T4"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Primary hyperthyroidism suppresses TSH and elevates T4.",
+                "This pattern indicates primary hypothyroidism.",
+                "This suggests pituitary overproduction or resistance, not primary hyperthyroidism.",
+                "This pattern suggests central (secondary) hypothyroidism."
+            ]
+        },
+        {
+            "question": "Which medication should be separated from levothyroxine by at least 4 hours due to absorption interference?",
+            "options": [
+                "Calcium carbonate",
+                "Loratadine",
+                "Acetaminophen",
+                "Metformin"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Calcium binds levothyroxine and reduces absorption.",
+                "Loratadine does not affect levothyroxine absorption.",
+                "Acetaminophen does not interfere with levothyroxine absorption.",
+                "Metformin does not significantly interfere with levothyroxine absorption."
+            ]
+        },
+        {
+            "question": "Which medication is preferred for chronic management of primary hyperaldosteronism?",
+            "options": [
+                "Spironolactone",
+                "Furosemide",
+                "Hydrochlorothiazide",
+                "Lisinopril"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Spironolactone blocks aldosterone receptors and is first-line for medical management.",
+                "Loop diuretics do not directly treat aldosterone excess.",
+                "Thiazides can worsen hypokalemia in hyperaldosteronism.",
+                "ACE inhibitors are helpful for HTN but do not directly block aldosterone effects."
+            ]
+        },
+        {
+            "question": "In thyroid storm, which medication should be given after thionamides to block hormone release?",
+            "options": [
+                "Iodine (e.g., SSKI)",
+                "Levothyroxine",
+                "Methimazole only",
+                "Calcitriol"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Iodine is given after thionamides to block release of preformed thyroid hormone.",
+                "Levothyroxine would worsen hyperthyroidism.",
+                "Thionamides alone reduce synthesis but do not immediately block hormone release.",
+                "Calcitriol is unrelated to thyroid storm management."
+            ]
+        },
+        {
+            "question": "Which medication can be used to treat nephrogenic diabetes insipidus?",
+            "options": [
+                "Hydrochlorothiazide",
+                "Desmopressin",
+                "Furosemide",
+                "Prednisone"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Thiazides reduce polyuria in nephrogenic DI by inducing mild volume depletion.",
+                "Desmopressin treats central DI, not nephrogenic DI.",
+                "Furosemide can worsen volume depletion and is not standard therapy.",
+                "Prednisone does not treat DI."
+            ]
         }
     ],
     "Infectious Diseases - Specific": [
@@ -2128,6 +4128,86 @@ const questionBank = {
                 "Mupirocin is for MRSA or impetigo.",
                 "Bacitracin is for minor scrapes.",
                 "Steroids slow down wound healing and increase infection risk in burns."
+            ]
+        },
+        {
+            "question": "Which is the first-line treatment for streptococcal pharyngitis in a non-allergic patient?",
+            "options": [
+                "Penicillin V",
+                "Azithromycin",
+                "Ciprofloxacin",
+                "Clindamycin"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Penicillin (or amoxicillin) is first-line for strep throat.",
+                "Azithromycin is used only in penicillin allergy or other specific situations.",
+                "Ciprofloxacin is not appropriate for strep throat.",
+                "Clindamycin is an alternative for severe penicillin allergy."
+            ]
+        },
+        {
+            "question": "Which antibiotic is first-line for acute uncomplicated otitis media in children without allergy?",
+            "options": [
+                "Amoxicillin",
+                "Doxycycline",
+                "Cefepime",
+                "Metronidazole"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. High-dose amoxicillin is first-line for acute otitis media.",
+                "Doxycycline is not first-line in young children.",
+                "Cefepime is a broad-spectrum IV agent reserved for severe infections.",
+                "Metronidazole does not cover common otitis pathogens."
+            ]
+        },
+        {
+            "question": "A patient with a purulent skin abscess likely due to community MRSA needs oral therapy. Which is appropriate?",
+            "options": [
+                "TMP-SMX",
+                "Amoxicillin",
+                "Cephalexin",
+                "Azithromycin"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. TMP-SMX is a common oral option for community MRSA.",
+                "Amoxicillin does not reliably cover MRSA.",
+                "Cephalexin does not cover MRSA.",
+                "Azithromycin is not reliable for MRSA."
+            ]
+        },
+        {
+            "question": "Which regimen is recommended for early localized Lyme disease (erythema migrans) in a non-pregnant adult?",
+            "options": [
+                "Doxycycline",
+                "Ciprofloxacin",
+                "Trimethoprim-sulfamethoxazole",
+                "Aztreonam"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Doxycycline is first-line for early localized Lyme disease.",
+                "Ciprofloxacin is not a standard Lyme therapy.",
+                "TMP-SMX is not effective for Lyme disease.",
+                "Aztreonam is not used for Lyme disease."
+            ]
+        },
+        {
+            "question": "Which antibiotic provides atypical coverage for CAP when combined with a beta-lactam in patients with comorbidities?",
+            "options": [
+                "Azithromycin",
+                "Amoxicillin",
+                "Cephalexin",
+                "Metronidazole"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Macrolides like azithromycin provide atypical coverage.",
+                "Amoxicillin lacks atypical coverage.",
+                "Cephalexin lacks atypical coverage and is not used for CAP combination therapy.",
+                "Metronidazole targets anaerobes, not atypicals."
             ]
         }
     ],
@@ -2211,6 +4291,86 @@ const questionBank = {
                 "While some metabolism happens in the gut wall, the liver is the main site.",
                 "Lungs do not perform significant first-pass metabolism."
             ]
+        },
+        {
+            "question": "Which formula is used to calculate a loading dose?",
+            "options": [
+                "LD = (Css * Vd) / F",
+                "LD = (Cl * Css)",
+                "LD = (0.693 * Vd) / Cl",
+                "LD = (Dose/Interval)"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Loading dose depends on target concentration, Vd, and bioavailability.",
+                "Cl * Css gives maintenance dose rate, not loading dose.",
+                "This formula is for half-life, not loading dose.",
+                "Dose/Interval is the maintenance dosing rate, not loading dose."
+            ]
+        },
+        {
+            "question": "A drug has Vd 40 L and CL 5 L/hr. What is the half-life?",
+            "options": [
+                "2.8 hours",
+                "5.5 hours",
+                "8.0 hours",
+                "11.1 hours"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "Too short based on Vd and CL values.",
+                "Correct. t1/2 = 0.693 * Vd / CL = 0.693 * 40 / 5 = 5.5 hr.",
+                "8 hours would require lower clearance or higher Vd.",
+                "11.1 hours is about double the correct value."
+            ]
+        },
+        {
+            "question": "If bioavailability (F) is 0.5, how does that affect the oral loading dose compared to IV?",
+            "options": [
+                "Oral dose is half the IV dose",
+                "Oral dose is the same as IV",
+                "Oral dose is double the IV dose",
+                "Bioavailability does not affect loading dose"
+            ],
+            "correctAnswer": 2,
+            "explanations": [
+                "If F is 0.5, you must give more, not less.",
+                "Only true if F = 1 (IV).",
+                "Correct. When F = 0.5, the oral dose must be doubled to achieve the same exposure.",
+                "Bioavailability directly affects loading and maintenance dosing."
+            ]
+        },
+        {
+            "question": "Which change will increase the half-life of a drug?",
+            "options": [
+                "Increase clearance",
+                "Decrease volume of distribution",
+                "Decrease clearance",
+                "Increase bioavailability"
+            ],
+            "correctAnswer": 2,
+            "explanations": [
+                "Increasing clearance shortens half-life.",
+                "Decreasing Vd shortens half-life.",
+                "Correct. Lower clearance prolongs half-life.",
+                "Bioavailability affects exposure, not half-life."
+            ]
+        },
+        {
+            "question": "For a drug with first-order kinetics, what happens when the dose is doubled?",
+            "options": [
+                "The concentration doubles",
+                "The concentration increases by a constant amount",
+                "The half-life is cut in half",
+                "The drug becomes zero-order"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. In first-order kinetics, exposure is proportional to dose.",
+                "Constant amount eliminated describes zero-order kinetics.",
+                "Half-life remains the same in first-order kinetics.",
+                "Doubling the dose does not change kinetic order."
+            ]
         }
     ],
     "Hematology & Transplant": [
@@ -2293,6 +4453,86 @@ const questionBank = {
                 "Incorrect.",
                 "Incorrect."
             ]
+        },
+        {
+            "question": "Which agent is an mTOR inhibitor used in transplant patients?",
+            "options": [
+                "Sirolimus",
+                "Tacrolimus",
+                "Cyclosporine",
+                "Mycophenolate"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Sirolimus (rapamycin) inhibits mTOR and T-cell proliferation.",
+                "Tacrolimus is a calcineurin inhibitor.",
+                "Cyclosporine is a calcineurin inhibitor.",
+                "Mycophenolate is an antimetabolite."
+            ]
+        },
+        {
+            "question": "Which anemia is characterized by macrocytosis and neurologic symptoms (e.g., paresthesias)?",
+            "options": [
+                "Iron deficiency anemia",
+                "B12 deficiency anemia",
+                "Anemia of chronic disease",
+                "Thalassemia"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "Iron deficiency causes microcytosis and no neurologic deficits.",
+                "Correct. B12 deficiency causes macrocytosis and neurologic symptoms.",
+                "Anemia of chronic disease is usually normocytic or microcytic.",
+                "Thalassemia is microcytic and inherited."
+            ]
+        },
+        {
+            "question": "Which immunosuppressant is teratogenic and requires a REMS program with pregnancy testing?",
+            "options": [
+                "Mycophenolate mofetil",
+                "Tacrolimus",
+                "Prednisone",
+                "Basiliximab"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Mycophenolate is highly teratogenic and requires REMS precautions.",
+                "Tacrolimus is not in a REMS program for teratogenicity.",
+                "Prednisone can be used in pregnancy when needed.",
+                "Basiliximab is an IL-2 receptor blocker, not a REMS teratogen."
+            ]
+        },
+        {
+            "question": "Which of the following is an IL-2 receptor antagonist used for induction therapy in transplant?",
+            "options": [
+                "Basiliximab",
+                "Rituximab",
+                "Infliximab",
+                "Omalizumab"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Basiliximab blocks the IL-2 receptor (CD25) on activated T-cells.",
+                "Rituximab targets CD20 on B-cells.",
+                "Infliximab targets TNF-alpha.",
+                "Omalizumab targets IgE."
+            ]
+        },
+        {
+            "question": "Which iron study pattern is most consistent with iron deficiency anemia?",
+            "options": [
+                "Low ferritin, high TIBC",
+                "High ferritin, low TIBC",
+                "Normal ferritin, low TIBC",
+                "High ferritin, high TIBC"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Iron deficiency has low ferritin (stores) and high TIBC.",
+                "High ferritin and low TIBC suggests anemia of chronic disease.",
+                "Normal ferritin with low TIBC is not consistent with iron deficiency.",
+                "High ferritin with high TIBC is not typical."
+            ]
         }
     ],
     "Common Lab Values & Hemodynamics": [
@@ -2374,6 +4614,86 @@ const questionBank = {
                 "Correct. A >50% drop from baseline after heparin exposure is the classic '4T' score finding.",
                 "HIT specifically affects platelets via antibodies.",
                 "Hemoglobin is not directly affected by the HIT mechanism."
+            ]
+        },
+        {
+            "question": "What is the normal reference range for serum potassium?",
+            "options": [
+                "3.5 - 5.0 mEq/L",
+                "2.0 - 3.0 mEq/L",
+                "5.5 - 7.0 mEq/L",
+                "8.0 - 10.0 mEq/L"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Normal potassium is typically 3.5 to 5.0 mEq/L.",
+                "This range is abnormally low and can cause arrhythmias.",
+                "This range is hyperkalemic and dangerous.",
+                "This range is incompatible with normal physiology."
+            ]
+        },
+        {
+            "question": "Which lab value most strongly suggests tissue hypoperfusion in shock?",
+            "options": [
+                "Elevated lactate",
+                "Low BUN",
+                "High sodium",
+                "Low calcium"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Elevated lactate indicates anaerobic metabolism and hypoperfusion.",
+                "Low BUN is not a marker of shock.",
+                "High sodium does not specifically indicate hypoperfusion.",
+                "Low calcium is not a primary marker of shock."
+            ]
+        },
+        {
+            "question": "What is the normal INR range for a patient not on anticoagulation?",
+            "options": [
+                "0.8 - 1.2",
+                "1.5 - 2.5",
+                "2.0 - 3.0",
+                "3.0 - 4.0"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. Normal INR is around 1.0 (typically 0.8 - 1.2).",
+                "This range is therapeutic for some anticoagulation indications, not normal.",
+                "This is a common therapeutic range for warfarin, not normal.",
+                "This is supratherapeutic and indicates high bleeding risk."
+            ]
+        },
+        {
+            "question": "Which hemodynamic parameter best reflects left ventricular preload?",
+            "options": [
+                "Central venous pressure (CVP)",
+                "Pulmonary capillary wedge pressure (PCWP)",
+                "Systemic vascular resistance (SVR)",
+                "Cardiac output"
+            ],
+            "correctAnswer": 1,
+            "explanations": [
+                "CVP reflects right-sided preload, not left-sided.",
+                "Correct. PCWP approximates left atrial pressure and LV preload.",
+                "SVR reflects afterload, not preload.",
+                "Cardiac output reflects overall pump function, not preload specifically."
+            ]
+        },
+        {
+            "question": "What is the normal range for aPTT in a patient not on heparin?",
+            "options": [
+                "25 - 35 seconds",
+                "10 - 15 seconds",
+                "45 - 60 seconds",
+                "70 - 90 seconds"
+            ],
+            "correctAnswer": 0,
+            "explanations": [
+                "Correct. aPTT is typically around 25-35 seconds.",
+                "This is too short for normal aPTT.",
+                "This suggests anticoagulation or a coagulation disorder.",
+                "This is markedly prolonged and abnormal."
             ]
         }
     ]
