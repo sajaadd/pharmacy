@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAPLEX Master - Pharmacy Study Tool</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>NAPLEX<span class="highlight">Master</span></h1>
+            <p>Comprehensive Study Tool for Pharmacy Students</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Topic Selection Screen -->
+        <section id="topic-selection" class="card">
+            <h2>Select a Topic</h2>
+            <p>Choose a category to start your 5-question practice set.</p>
+            <div id="topic-grid" class="topic-grid">
+                <!-- Topics will be dynamically populated here -->
+            </div>
+        </section>
+
+        <!-- Quiz Screen -->
+        <section id="quiz-container" class="card hidden">
+            <div class="quiz-header">
+                <button id="back-btn" class="btn-secondary">&larr; Back to Topics</button>
+                <div class="progress-info">
+                    <span id="topic-name">Topic</span>
+                    <span id="question-count">Question 1 of 5</span>
+                </div>
+            </div>
+            
+            <div id="question-box">
+                <div id="question-text" class="question-text"></div>
+                <div id="options-container" class="options-container"></div>
+                <button id="submit-btn" class="btn-primary" disabled>Submit Answer</button>
+            </div>
+
+            <div id="explanation-container" class="explanation-container hidden">
+                <div id="result-badge" class="result-badge"></div>
+                <h3>Rationale</h3>
+                <div id="explanation-content"></div>
+                <button id="next-btn" class="btn-primary">Next Question</button>
+            </div>
+        </section>
+
+        <!-- Results Screen -->
+        <section id="results-screen" class="card hidden">
+            <h2>Quiz Results</h2>
+            <div class="score-display">
+                <span id="final-score">0/5</span>
+                <p id="score-message"></p>
+            </div>
+            <button id="restart-btn" class="btn-primary">Try Another Topic</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 NAPLEX Master Study Tool. Designed for Pharmacy Students.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/questions.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
