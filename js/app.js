@@ -78,8 +78,9 @@ document.addEventListener('DOMContentLoaded', () => {
         isAnswered = false;
         selectedOption = null;
         submitBtn.disabled = true;
-        explanationContainer.classList.add('hidden');
         submitBtn.classList.remove('hidden');
+        nextBtn.classList.add('hidden');
+        optionsContainer.classList.remove('show-all-rationales');
         
         const questions = questionBank[currentTopic];
         const question = questions[currentQuestionIndex];
@@ -92,8 +93,20 @@ document.addEventListener('DOMContentLoaded', () => {
         question.options.forEach((option, index) => {
             const div = document.createElement('div');
             div.className = 'option';
-            div.textContent = option;
             div.dataset.index = index;
+            
+            const textSpan = document.createElement('span');
+            textSpan.className = 'option-text';
+            textSpan.textContent = option;
+            
+            const explanationDiv = document.createElement('div');
+            explanationDiv.className = 'option-explanation';
+            // We use the new array-based explanations
+            explanationDiv.textContent = question.explanations[index];
+            
+            div.appendChild(textSpan);
+            div.appendChild(explanationDiv);
+            
             div.addEventListener('click', () => selectOption(div));
             optionsContainer.appendChild(div);
         });
@@ -120,32 +133,16 @@ document.addEventListener('DOMContentLoaded', () => {
         
         if (isCorrect) score++;
         
-        // Highlight correct/incorrect answers
+        // Highlight correct/incorrect answers and show all explanations
         const allOptions = document.querySelectorAll('.option');
         allOptions[selectedOption].classList.add(isCorrect ? 'correct' : 'incorrect');
         if (!isCorrect) {
             allOptions[question.correctAnswer].classList.add('correct');
         }
         
-        showExplanation(isCorrect, question);
+        optionsContainer.classList.add('show-all-rationales');
         submitBtn.classList.add('hidden');
-    }
-
-    function showExplanation(isCorrect, question) {
-        explanationContainer.classList.remove('hidden');
-        resultBadge.textContent = isCorrect ? 'CORRECT' : 'INCORRECT';
-        resultBadge.className = `result-badge ${isCorrect ? 'badge-correct' : 'badge-incorrect'}`;
-        
-        explanationContent.innerHTML = `
-            <div class="explanation-section">
-                <h4>Correct Answer Explanation:</h4>
-                <p>${question.explanations.correct}</p>
-            </div>
-            <div class="explanation-section">
-                <h4>Why the others are wrong:</h4>
-                <p>${question.explanations.incorrect}</p>
-            </div>
-        `;
+        nextBtn.classList.remove('hidden');
         
         if (currentQuestionIndex === questionBank[currentTopic].length - 1) {
             nextBtn.textContent = 'See Results';
